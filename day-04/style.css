@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background: rgb(98,0,247);
+    background: linear-gradient(90deg, rgba(98,0,247,1) 0%, rgba(206,3,184,1) 100%);
+    
+}
+
+.container {
+    margin-top:100px;
+    border: 1px solid black;
+    /* width: 400px; */
+    /* height: 500px; */
+    margin-right: 80px;
+    background-color: #f7f8f7;
+    border-radius: 30px;
+}
+
+p{
+    margin: 10px 20px;
+}
+
+
+form{
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#name, #email, #phone {
+    height: 30px;
+    width: 350px;
+    box-sizing: border-box;
+    margin: 5px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.133)
+}
+
+textarea {
+    margin: 20px 20px 40px 20px;
+    height: 150px;
+    width:350px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.133);
+    box-sizing: border-box;
+    resize: none;
+}
+
+button{
+    height: 30px;
+    border-radius: 50px;
+    width: 350px;
+    box-sizing: border-box;
+    margin: 0px 20px 20px 20px;
+    background-color:#fe007a;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    cursor:pointer;
+    border: none;
+}
