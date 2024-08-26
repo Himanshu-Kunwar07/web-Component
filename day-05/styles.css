@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    background-image: url('./public/coffee.jpeg');
+    background-repeat: no-repeat;
+    background-size: 45% 1000px;
+}
+
+.heading {
+    background-color: aliceblue;
+    margin: 20px auto;
+}
+
+.heading h1 {
+  margin: 30px 30px;
+}
+.bg-img {
+    background-image: url('./public/coffee.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#cornor{
+    margin-right: 400px;
+    color: white;
+    align-self: flex-end;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px;
+}
+
+
+.time, .level, .buget {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.time p, .level p, .buget p{
+    margin: 0;
+}
+
+.time p:last-child, .level p:last-child, .buget p:last-child {
+    font-weight: bold;
+    color: #b7ae06
+
+}
+.firstRow div img {
+    margin-right: 10px;
+    width: 35px;
+    height: 40px;
+}
+
+.leftRight{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-left: 45%;
+}
+
+
+.firstRow {
+    display: flex;
+    flex-direction: row;
+}
+
+ol {
+    margin-block-start: 0;
+    padding-inline-start: 20px
+}
