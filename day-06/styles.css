@@ -59,6 +59,8 @@ body{
 .center{
   transform: scale(1.2);
 }
+
+
 .selectedIMG{
   border: 1px solid white;
 }
