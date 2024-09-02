@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Password Maker</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Generate password</h2>
+        <p>GENERATED PASSWORD</p>
+        <div class="password">
+         <output type="text" id="result" > sZBseL181NEj</output>
+          
+        </div>
+        <div class="character">
+          <p>CHARACTER LENGTH</p>
+          <p id="NOC">16</p>
+        </div>
+        <div class="range">
+            <output id="rvalue" for="points">16</output>
+            <input type="range" id="points" name="points" min="0" max="32" oninput="rvalue.value = this.value" onchange="onupdatevalue(this.value)">
+            <output>32</output>
+        </div>
+        <p>SETTINGS</p>
+        <div class="setting">
+            <div class="uppercase">
+                <p>Include uppercase letters</p>
+                <div class="switch">
+                    <input type="checkbox" id="check1">
+                    <label for="check1" class="slider round"></label>
+                </div>
+            </div>
+            <div class="lowercase">
+                <p>Include lowercase letters</p>
+                <div class="switch">
+                    <input type="checkbox" id="check2">
+                    <label for="check2" class="slider round"></label>
+                </div>
+            </div>
+            <div class="number">
+                <p>Include numbers</p>
+                <div class="switch">
+                  <input type="checkbox" id="check3">
+                  <label for="check3" class="slider round"></label>
+                </div>
+            </div>
+            <div class="symbols">
+                <p>Include symbols</p>
+                <div class="switch">
+                    <input type="checkbox" id="check4">
+                    <label for="check4" class="slider round"></label>
+                </div>
+            </div>
+            <button id="btn1">Generate Password</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
