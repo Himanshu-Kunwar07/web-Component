@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4dbcda;
+            overflow: hide;
+
+        }
+        .container{
+            display: flex;
+            width: 350px;
+            height: wrap;
+            align-self: center;
+            background-color: white;
+            padding: 20px;
+            box-shadow: rgba(240, 240, 240, .75) 0 10px 15px;
+            border-radius: 10px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: left;
+            width: 100%;
+        }
+
+        .inline{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-bottom: 10px;
+        }
+        .m-5{
+            margin-right: 10px;
+        }
+
+        button{
+            align-self: center;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form  method="post">
+            <div class="inline">
+               <label class="m-5" for="tag">Enter Tag</label>
+               <input type="text" id="tag">
+            </div>
+            <div class="inline">
+               <label class="m-5" for="photo">Enter Picture</label>
+               <input type="file">
+            </div>
+            <div class="inline">
+               <label class="m-5" for="heading">Enter Heading</label>
+               <input type="text" id="heading">
+            </div>
+            <div >
+               <label for="detail" class="m-5">Enter Deatil of post</label>
+               <Textarea rows="8" cols="40" type="text" resize="none"></Textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

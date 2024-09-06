@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #e5e8ee;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+}
+
+.container h1{
+    margin:  0px 0px 20px 9%;
+    align-self: flex-start;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.links div{
+    width: 300px;
+}
+
+.todo, .in-progress, .done, .under-review{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+
+.block{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    margin: 20px 20px 20px 0px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100%;
+}
+.block img{
+    border-radius: 10px;
+}
+
+#high{
+    background-color: #be4384;
+    border-radius: 10%;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#low{
+    background-color: #4bb53b;
+    border-radius: 10%;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#medium{
+    background-color: #29b4f0 ;
+    border-radius: 10%;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.mb-5{
+    margin-bottom: 15px;
+}
+
+.user button{
+    width: 20px;
+    height: 20px;
+    border-style: dotted;
+    backface-visibility: transparent;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn1{
+    width: 40px;
+    height: 30px;
+    font-size: 25px;
+    border: none;
+    background-color: #e5e8ee;
+    font-weight: 100;
+    margin: -10px 0 -20px 0;
+}
+
