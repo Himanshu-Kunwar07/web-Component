@@ -9,5 +9,4 @@
     image.setAttribute('id', 'previewimage');
     div.removeChild(child);
     div.appendChild(image);
-    
 }
