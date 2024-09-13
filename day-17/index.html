@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p id="No">1</p>
+        <div class="display">
+              <button>
+                  <img class="highlight" src="./public/left.png" alt="left">
+              </button>
+            
+             <div class="card">
+                <img  id="profile" src="./public/quantum Computer.jpg" alt="profile">
+                <div class="data">
+                    <h3>The rise of quantum computing: A papradigm shift in technlogy</h3>
+                    <p>Quantum computing once relegated to the realm of science fiction is now becomin a tangible reality,
+                        promising to revolutionize the way we process infomation. Unike classical computer that use bits
+                        to represent either a 0 or a 1, quantum computeres leverage quatum bits, or qubits, which
+                    </p>
+                    <div class="contract">
+                        <div class="name">
+                            <img src="./public/dp.jpeg" alt="dp">
+                            <div >
+                                <h5>Paul J.Yarnell</h5>
+                                <p>24 Fev 2024</p>
+                            </div>
+                        </div>
+                        <img  class="highlight" src="./public/links.svg" alt="link">
+                    </div>
+                </div>
+             </div>
+
+             <button>
+                 <img class="highlight" src="./public/right.png" alt="right">
+             </button>
+            
+        </div>
+        <div class="nav">
+            <div class="dot select"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        
+       <div class="box">
+        <div class="links">
+            <div class="socials">
+                <img id="twitter" src="./public/design1.png" alt="facebook">
+            </div>
+            <img class="highlight share" src="./public/links.svg" alt="link">
+
+        </div>
+       </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            let i = 1;
+            $(".share").click(function(){
+                if(i>2){
+                    i = 1;
+                }
+                (i===1)? $(".socials").css('display', 'flex'): $(".socials").css('display', 'none');
+                i++;
+            });
+        });
+    </script>
+    
+</body>
+</html>
