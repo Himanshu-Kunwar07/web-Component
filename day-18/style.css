@@ -1,0 +1,138 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-medium{
+    display: none;
+    flex-direction: column;
+    width: 850px;
+}
+
+
+
+.headline{
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 20px 20px 10px 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+
+.list-type img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.box-view-medium{
+    width: 850px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color:  #212121;;
+    gap: 20px;
+    padding: 20px; 
+    border: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.medium-grid-item{
+    width: 254.3px;
+    height: 170.958px;
+    cursor: pointer;
+}
+
+
+.box-list{
+    display: none;
+    flex-direction: column;
+    width: 850px;
+}
+
+.box-view-list{
+    height: 600px;
+    /* z-index: 1; */
+}
+.list-view{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    background-color: #212121;
+    grid-template-rows: repeat(9 1fr);
+    gap: 20px;
+    padding: 20px 0px;
+    overflow-y: scroll;
+}
+
+.list-grid-item{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.list-grid-item:hover{
+    background-color: rgb(55, 60, 62);
+}
+
+.list-grid-item img{
+    width: 120px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.box-preview{
+    display: none;
+}
+
+.box-view-preview{
+    display: flex;
+    Width: 850px;
+    height: 600px;
+    background-color: #212121;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preview img{
+    margin:20px;
+    width: 800px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+
+.preview-grid-item {
+    width: 84px;
+    height: 56px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.current{
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+}

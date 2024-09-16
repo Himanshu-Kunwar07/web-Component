@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Imagepreview</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box-medium current">
+            <div class="headline">
+                <h4>Images</h4>
+                <div class="list-type">
+                    <img src="./public/MediumList.png" alt="square" id="medium" onClick="viewType(this.id)" >
+                    <img src="./public/list.png" alt="square" id="list" onClick="viewType(this.id)">
+                    <img src="./public/preview.png" alt="square" id="single" onClick="viewType(this.id)" >
+                </div>
+
+            </div>
+            <div class="box-view-medium">
+                <img class="medium-grid-item"src="./public/img1.jpg" alt="img1">
+                <img class="medium-grid-item"src="./public/img2.jpeg" alt="img2">
+                <img class="medium-grid-item"src="./public/img3.jpeg" alt="img3">
+                <img class="medium-grid-item"src="./public/img4.jpeg" alt="img4">
+                <img class="medium-grid-item"src="./public/img5.jpg" alt="img5">
+                <img class="medium-grid-item"src="./public/img6.jpeg" alt="img6">
+                <img class="medium-grid-item"src="./public/img7.jpeg" alt="img7">
+                <img class="medium-grid-item"src="./public/img8.jpeg" alt="img8">
+                <img class="medium-grid-item"src="./public/img9.jpeg" alt="img9">
+            </div>
+        </div>
+
+        <div class="box-list">
+            <div class="headline">
+                <h4>Images</h4>
+                <div class="list-type">
+                    <img src="./public/MediumList.png" alt="square" id="medium" onClick="viewType(this.id)">
+                    <img src="./public/list.png" alt="square" id="list" onClick="viewType(this.id)">
+                    <img src="./public/preview.png" alt="square" id="single" onClick="viewType(this.id)">
+                </div>
+
+            </div>
+            <div class="box-view-list">
+                <div class="list-view">
+                    <div class="list-grid-item">
+                        <img src="./public/img1.jpg" alt="img1">
+                        <p>Image name</p>
+                    </div>
+                    <div class="list-grid-item">
+                        <img src="./public/img2.jpeg" alt="img2">
+                        <p>Image name</p>
+                    </div>
+                    <div class="list-grid-item">
+                        <img src="./public/img3.jpeg" alt="img3">
+                        <p>Image name</p>
+                    </div>
+                    <div class="list-grid-item">
+                        <img src="./public/img4.jpeg" alt="img4">
+                        <p>Image name</p>
+                    </div>
+                    <div class="list-grid-item">
+                        <img src="./public/img5.jpg" alt="img5">
+                        <p>Image name</p>
+                    </div> 
+                    <div class="list-grid-item">
+                        <img src="./public/img6.jpeg" alt="img6">
+                        <p>Image name</p>
+                    </div>
+                    <div class="list-grid-item">
+                        <img src="./public/img7.jpeg" alt="img7">
+                        <p>Image name</p>
+                    </div>
+                    <div class="list-grid-item">
+                        <img src="./public/img8.jpeg" alt="img8">
+                        <p>Image name</p>
+                    </div>
+                    <div class="list-grid-item">
+                        <img src="./public/img9.jpeg" alt="img9">
+                        <p>Image name</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-preview">
+            <div class="headline">
+                <h4>Images</h4>
+                <div class="list-type">
+                    <img src="./public/MediumList.png" alt="square" id="medium" onClick="viewType(this.id)">
+                    <img src="./public/list.png" alt="square" id="list" onClick="viewType(this.id)">
+                    <img src="./public/preview.png" alt="square" id="single" onClick="viewType(this.id)">
+                </div>
+
+            </div>
+            <div class="box-view-preview">
+                <div class="preview">
+                    <img id="pre" src="./public/img1.jpg" alt="pre">
+                </div>
+                <div class="single-view">
+                    <img class="preview-grid-item"src="./public/img1.jpg" alt="img1" id="img1" onclick="changeImg(this)">
+                    <img class="preview-grid-item"src="./public/img2.jpeg" alt="img2" id="img2" onclick="changeImg(this)">
+                    <img class="preview-grid-item"src="./public/img3.jpeg" alt="img3" id="img3"onclick="changeImg(this)">
+                    <img class="preview-grid-item"src="./public/img4.jpeg" alt="img4" id="img4"onclick="changeImg(this)">
+                    <img class="preview-grid-item"src="./public/img5.jpg" alt="img5" id="img5"onclick="changeImg(this)">
+                    <img class="preview-grid-item"src="./public/img6.jpeg" alt="img6" id="img6"onclick="changeImg(this)">
+                    <img class="preview-grid-item"src="./public/img7.jpeg" alt="img7" id="img7"onclick="changeImg(this)"> 
+                    <img class="preview-grid-item"src="./public/img8.jpeg" alt="img8" id="img8"onclick="changeImg(this)">
+                    <img class="preview-grid-item"src="./public/img9.jpeg" alt="img9" id="img9"onclick="changeImg(this)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
