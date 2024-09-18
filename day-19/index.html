@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Upload Photo</h2>
+        <form action="submit" method="post">
+        <div class="drag-drop">
+            <img src="/public/img.png" alt="galary" width="50px">
+          <div class="browse">
+              <p>Drop your image here or</p>
+              <label for="select" >Browse</label>
+              <input type="file"  id="select" style= "display: none" data-multiple-caption="{count} files selected" accept="image/png, image/jpeg, image/jpg">
+          </div>
+          <p>PNG, JPG, JPEG</p>     
+        </div>
+      </form>
+      <div class="file">
+        <img src="" alt="image" width="65px">
+        <div class="details">
+            <p class="name">Background_picture.png</p>
+            <img src="" alt="pause" class="pause">
+            <img src="" alt="delete" class="delete">
+            <h6 class="size">21mb</h6>
+            <div class="status"></div>
+            <p class="percen">25%</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"> </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bodoni', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(138, 103, 192, 0.298);
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+   background-color: rgb(255, 255, 255);
+}
+
+.drag-drop {
+    width: 400px;
+    height: 200px;
+    outline: 2px dashed black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.browse{
+    display: flex;
+}
+
+.browse p {
+    margin-right: 5px;
+}
+
+.browse label {
+    color: rgb(206, 26, 206);
+    cursor: pointer;
+}
+
+.is-dragover{
+    background-color: grey;
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #fff;
+    display:none;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input::file-selector-name {
+    display: none;
+}
+
+
+.file{
+    margin-top: 20px;
+    display: none;
+    height: 70px;
+    width: 100%;
+    border: 1px solid rgba(90, 79, 79, 0.341);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.name{ grid-area: name };
+.pause{ grid-area: pause};
+.delete{ grid-area:  delete};
+.size { grid-area: size};
+.status{ grid-area: status};
+.percen{ grid-area: percen};
+
+
+.details{
+    display: grid;
+    grid-template-areas: 'name name pause delete'
+                        'size . pause delete'
+                        'status sstaus status percen';
+}
