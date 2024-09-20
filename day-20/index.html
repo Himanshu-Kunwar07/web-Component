@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        
+            <div class="card-details">
+            <p>Welcome</p>
+            <h2>My Cards</h2>
+
+
+            <div class="card">
+                <p>Balance</p>
+                <h3>$4387</h3>
+                <p id="card-no">.... .... .... 2390</p>
+                <div class="card-name">
+                    <div class="date">
+                        <p>Expire</p>
+                        <p>4/26</p>
+                    </div>
+                    <h2>ViSA</h2>
+                </div>
+            </div>
+
+            <div class="nav">
+                <div class="item-1"></div>
+                <div class="item-1"></div>
+                <div class="item-1"></div>
+                <div class="item-1"></div>
+            </div>
+
+        </div>
+            <div class="add-card">
+            <img src="./public/add.png" alt="add-card">
+            </div>
+            
+            <div class="transactions">
+                <h5>Trasactions</h5>
+                <div class="transaction">
+                    <img src="./public/travel.png" alt="img">
+                    <div class="transactionType">
+                        <h5>Travel</h5>
+                        <p>3day ago</p>
+                    </div>
+
+                    <p>-$200</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="new-card">
+            <button id="back"><img src="./public/back.png" alt="back" width="30px"></button>
+            <h2>Add a card</h2>
+
+            <div class="card-detail">
+                <form action="submit">
+                    <input class="full" placeholder="Name" type="text">
+                    <input  class="full" placeholder="Account No" type="number">
+                    <div class="expireon">
+                        <input class="half" type="date" placeholder="DD/YYYY">
+                        <input class="half" type="number" placeholder="CVC Code">
+                    </div>
+                    <div class="bydefault">
+                        <input id="default" type="checkbox">
+                        <label for="default">SET AS DEFAULT CARD</label>
+                    </div>
+                </form>
+                <div class="btn">
+                    <button>Add New Card</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

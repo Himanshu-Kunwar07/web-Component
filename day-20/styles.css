@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(245, 31, 245, 0.373);
+}
+
+.container{
+    background-color: white;
+    /* padding: 20px; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card-expenses{
+    position: relative;
+    z-index: 2;
+}
+.card-details{
+
+    background-color: black;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.card{
+    width: 350px;
+    height: 200px;
+    background: rgb(98,0,247);
+    background: linear-gradient(90deg, rgba(98,0,247,1) 0%, rgba(101,28,140,1) 27%, rgba(106,22,116,1) 59%, rgba(206,3,184,1) 100%);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3{
+    font-size: 30px;
+    font-weight: 200;
+}
+
+#card-no{
+    font-size: 20px;
+}
+
+.card-name {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.add-card{
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border-radius:  30%;
+    transform: rotate(45deg);
+    display: flex;
+    justify-self: center;
+    position: relative;
+    left: 38%;
+    bottom: 50px;
+    z-index: 0;
+}
+
+.add-card img {
+    position: absolute;
+    width: 30px;
+    right: 8%;
+    bottom: 8%;
+    border-radius: 100%;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+
+.transactions{
+    margin-top: -40px;
+    margin-left: 20px;
+    gap: 10px;
+    width: 100%;
+}
+
+.transaction{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.transaction img{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.new-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    width: 400px;
+    padding: 20px;
+    height: 700px;
+   
+    margin-left: 200px;
+    background-color: white;
+}
+
+
+
+.card-detail{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 0px;
+}
+
+
+#back{
+    width: 40px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.card-detail form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+.card-detail form input {
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.expireon{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+.bydefault{
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    margin:0;
+    align-items: center;
+    column-gap: 10px;
+    width: 100%;
+}
+
+.bydefault input{
+    margin: 0px;
+}
+
+.bydefault label{
+   margin-bottom: 10px;
+}
+
+
+.btn{
+    width: 100%;
+}
+.btn button {
+    width: 100%;
+    height: 40px;
+    color: white;
+
+    background: rgb(98,0,247);
+    background: linear-gradient(90deg, rgba(98,0,247,1) 0%, rgba(101,28,140,1) 27%, rgba(106,22,116,1) 59%, rgba(206,3,184,1) 100%);
+    border-radius: 5px;
+    border: none;
+}
