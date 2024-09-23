@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppings", sans-serif;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fadbcc;
+}
+
+.red{
+    background-color: red;
+    border: 2px solid white;
+}
+
+.green{
+    background-color: green;
+    border: 2px solid white;
+}
+
+.container{
+    width: 420px;
+    /* height: 600px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.container Header{
+    margin: 20px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active {
+    position: relative;
+    height: 55px;
+}
+
+.active .dot{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    position: absolute;
+    left: 162px;
+    bottom: 6px;
+}
+
+.active img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+header button{
+    width: 30px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+header div{
+    text-align: center;
+    margin-right: 20px;
+}
+
+.chats{
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    overflow: scroll; 
+    overflow-x: hidden;
+    box-sizing: content-box;
+    padding-right: 19px;
+}
+
+.y-axis{
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+}
+time{
+    width: 100%;
+    position: relative;
+    left: 40%;
+}
+
+.display_pic {
+    position: relative;
+    height: 35px;
+    width: 55px;
+}
+
+.display_pic .dot{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    position: absolute;
+    left: 26px;
+    bottom: 22px;
+}
+
+.display_pic img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.from{
+    display: flex;
+    width: 300px;
+    margin-top: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.from p{
+    padding: 10px;
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.to{
+    margin: 10px 0px 10px 120px;
+    color: white;
+}
+
+.to p{
+    padding: 10px;
+    background-color: #f79346;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.post {
+    margin: 10px;
+    position: relative;
+}
+
+.post input{
+    height: 40px;
+    width: 88%;
+    border-radius: 50px;
+    border: 1px solid rgba(128, 128, 128, 0.623);
+    padding: 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#send {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border-radius: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.623);
+    background-color: white;
+    cursor: pointer;
+}
