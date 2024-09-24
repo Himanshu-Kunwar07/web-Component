@@ -1,0 +1,187 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gowun Batang", serif;;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+header{
+    color: #194721;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    margin: 30px 40px 0px 40px;
+    margin-top: 30px;
+}
+
+.login{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 20px;
+}
+
+.login img{
+    width: 30px;
+    height: 30px;
+}
+
+.heading h2{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+nav ul li{
+    margin-left: 10%;
+}
+
+nav ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #194721;
+}
+
+
+
+main{
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+#colon{
+    width: 50px;
+    height: 50px;
+    margin: 0px 20px;
+}
+
+#plant{
+    width: 500px;
+    height: 100%;
+    margin-right: 100px;
+}
+
+.details {
+    margin: 50px 20px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.details *{
+    margin-bottom: 50px;
+}
+
+.details h1{
+    font-size: 50px;
+}
+.option{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+.plant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plant img{
+    width: 180px;
+    height: 170px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.plant button {
+    width: 40px;
+    height: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.558);
+    border-radius: 5px;
+    background-color: #fefefe;
+    cursor: pointer;
+}
+
+.plant button img{
+    width: 30px;
+    height: 30px;
+}
+
+.voice{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+}
+
+.customer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.name{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.name p:last-child{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.name p img{
+    width: 45px;
+    height: 20px;
+}
+
+.customer img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+
+.details{
+    color: #194721;
+}
+
+
