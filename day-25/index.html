@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <section class="part1">
+            <div class="calender">
+                <p>Calendar</p>
+                <div class="calendar_header">
+                    <h2 class="month_year">February2024</h2>
+                    <div class="btn">
+                        <button>Left</button>
+                        <button>right</button>
+                    </div>
+                </div>
+                <div class="calendar-body">
+                    <div class="calendar-week-day">
+                        <div>S</div>
+                        <div>M</div>
+                        <div>T</div>
+                        <div>W</div>
+                        <div>T</div>
+                        <div>F</div>
+                        <div>S</div>
+                    </div>
+                    <div class="calendar-days"></div>
+                </div>
+            </div>
+            <div class="remainder">
+                <div class="meeting">
+                    <p>Add meeting</p>
+                </div>
+                <div class="meet">
+                    <form action="submit">
+                        <label for="title">Title</label>
+                        <input id="title" placeholder="Enter the title">
+                        <label for="date">date</label>
+                        <text id="date">Friday, 23February 2024</text>
+                        <div class="half">
+                            <label for="Start">Start</label>
+                            <p>2:00 PM</p>
+                        </div>
+                        <div class="half">
+                            <label for="End">End</label>
+                            <p>3:00 PM</p>
+                        </div>
+                        
+                    </form>
+                    <div class="btn">
+                        <button>Save</button>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="part2">
+            <div class="todo">
+                <h2>Today</h2>
+                <div class="timeline">
+                    <div class="done">
+                        <div class="check">
+                            <label for="toggle"></label>
+                            <input type="checkbox">
+                        </div>
+                        <div class="name">
+                            <h3>Weekly plant Care Workshop</h3>
+                            <time>10:00AM-11:00Am</time>
+                        </div>
+                        <p>Done</p>
+                    </div>
+                    <div class="inprogress">
+                        <div class="inprog_check">
+                            <label for="toggle"></label>
+                            <input type="checkbox">
+                        </div>
+                        <div class="name">
+                            <h3>Succulent Succulents Seminar</h3>
+                            <time>01:00PM-01:30Pm</time>
+                        </div>
+                        <p>Inprogress</p>
+                    </div>
+                    <div class="notstarted">
+                        <div class="check">
+                            <label for="toggle"></label>
+                            <input type="checkbox">
+                        </div>
+                        <div class="name">
+                            <h3>Monthly Plant Swap</h3>
+                            <time>02:00PM-03:00Pm</time>
+                        </div>
+                        <p>Not Started</p>
+                    </div>
+                    <button class="btn">add</button>
+                </div>
+            </div>
+            <div class="alarm">
+            <form>
+                <div class="button">
+                    <button>Cancel</button>
+                    <button>Done</button>
+                </div>
+                <div class="time">
+                    <div class="highlight">
+                        <select name="hour" id="hour">
+                            <option value="1">1</option>
+                        </select>
+                        <select name="minute" id="minute">
+                            <option value="1">1</option>
+                        </select>
+                        <select name="ampm" id="ampm">
+                            <option value="AM">AM</option>
+                            <option value="PM">PM</option>
+                        </select>
+                   </div>
+                </div>
+           </form>
+         </div>
+        </section>
+    </div>
+
+    <script  src="number.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
