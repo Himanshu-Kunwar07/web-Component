@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(216, 212, 212, 0.596);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start ;
+    margin-top: 50px;
+}
+
+.down{
+    display: flex;
+    flex-direction: column;
+}
+
+.search{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+ #search{
+    position: absolute;
+    left: 10px;
+}
+
+.search form{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+    height: 35px;
+    width: 380px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 20px;
+    border: 1px solid grey;
+}
+
+.search select{
+    position: relative;
+    padding-left: 30px;
+    right: 0px;
+    height: 35px;
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    margin-right: 20px; 
+    border: 1px solid grey;
+}
+
+#loc{
+    position: absolute;
+    right: 200px;
+}
+
+
+.search button{
+    height: 35px;
+    width: 90px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid rgba(196, 189, 194, 0.837);
+    background-color: rgb(200, 8, 168);
+}
+
+
+.result {
+    margin-top: 40px;
+    padding: 20px;
+    width: 650px;
+    border-radius: 20px;
+    background-color: rgba(182, 169, 169, 0.816);
+    display: flex;
+    flex-direction: column;
+}
+
+.result heading{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.result .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    gap: 20px;
+}
+
+.card-grid .card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .photo{
+    display: flex;
+    width: 100%;
+}
+
+.card ul{
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.card ul li{
+    margin-right: 10px;
+    background-color: grey;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+
+
+.card .package{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.package .salary{
+    display: flex;
+}
+
+.preview{
+    padding: 20px;
+    width: 350px;
+    margin-left: 30px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+@media screen and (max-Width: 1050px ){
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .search{
+        width: 650px;
+    }
+    .result{
+        width: 650px;
+    }
+    .card-grid{
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .result{
+        display: flex;
+        width: 350px;
+       
+    }
+    .result .card-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .result > *{
+        width: 350px;
+    }
+    .search {
+        width: 500px;
+    }
+}

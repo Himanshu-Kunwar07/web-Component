@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px black;
+    background-color: black;
+    color: white;
+}
+
+.container heading {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 20px 0px 10px 0px;
+}
+
+.container .period {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+.preview {
+    width: 100%;
+    position: relative;
+}
+
+.preview .winner{
+   width: 349px;
+   height: 200px;
+   display: center;
+   border-bottom-left-radius:  100%;
+   border-bottom-right-radius: 100%;
+   background-color: rgb(255, 252, 252);
+   border: 1px solid black;
+   position: relative;
+   z-index: 0;
+   display: grid;
+   overflow: hidden;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+.second, .first, .third{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+
+.second div, .first div, .third div {
+    width: 80px;
+    height: 200px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.second {
+    margin-top: 50px;
+}
+
+.first {
+    margin-top: 25px;
+}
+
+.third {
+    margin-top: 60px;
+}
+
+
