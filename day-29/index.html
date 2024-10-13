@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>streaming Video</title>
+</head>
+<body>
+    <div class="container">
+        <div class="stream">
+            <video id="live-vid" autoplay></video>
+         <div class="control-bar">
+                <button id="life">Live</button>
+                <button id="play/pause">play</button>
+                <progress id="progress"></progress>
+                <button id="volup">volup</button>
+                <button id="voldn">Voldown</button>
+                <button id="resize"></button>
+         </div>
+         <div class="channel">
+            <img src="" alt="">
+
+        </div>
+       </div>
+        
+        
+        <div class="playlist">
+            <h2>Related Videos</h2>
+            <div class="video">
+                <img src="" alt="inst">
+                <div class="info">
+                    <p id="vid1">Video 1</p>
+                    <p id="channel">James Tyler</p>
+                    <p><span id=views>11164,323 views</span><span id="time">2 years</span></p>
+                </div> 
+            </div>
+            <div class="video">
+                <img src="" alt="vid2">
+                <p id="vid2">Video 2</p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
